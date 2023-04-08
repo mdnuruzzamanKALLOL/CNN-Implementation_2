@@ -17,7 +17,7 @@ The 50-layer ResNet architecture includes the following elements, as shown in th
 
 @ A 7×7 kernel convolution alongside 64 other kernels with a 2-sized stride. <br/>
 @ A max pooling layer with a 2-sized stride. <br/>
-@ 9 more layers—3×3,64 kernel convolution, another with 1×1,64 kernels, and a third with 1×1,256 kernels. These 3 layers are repeated 3 times. <br/>
+@ 9 more layers 3×3,64 kernel convolution, another with 1×1,64 kernels, and a third with 1×1,256 kernels. These 3 layers are repeated 3 times. <br/>
 @ 12 more layers with 1×1,128 kernels, 3×3,128 kernels, and 1×1,512 kernels, iterated 4 times. <br/>
 @ 18 more layers with 1×1,256 cores, and 2 cores 3×3,256 and 1×1,1024, iterated 6 times. <br/>
 @ 9 more layers with 1×1,512 cores, 3×3,512 cores, and 1×1,2048 cores iterated 3 times. <br/>
