@@ -13,6 +13,7 @@ All algorithms train on the output ‘Y’ but, ResNet trains on F(X). In simple
 
 ResNet Architecture
 The 50-layer ResNet architecture includes the following elements, as shown in the table below:
+
 ![resnet](https://user-images.githubusercontent.com/105699438/230710955-2be90d79-dfa8-47a5-b14d-5cbb1efaab59.png)
 
 @ A 7×7 kernel convolution alongside 64 other kernels with a 2-sized stride. <br/>
@@ -21,7 +22,7 @@ The 50-layer ResNet architecture includes the following elements, as shown in th
 @ 12 more layers with 1×1,128 kernels, 3×3,128 kernels, and 1×1,512 kernels, iterated 4 times. <br/>
 @ 18 more layers with 1×1,256 cores, and 2 cores 3×3,256 and 1×1,1024, iterated 6 times. <br/>
 @ 9 more layers with 1×1,512 cores, 3×3,512 cores, and 1×1,2048 cores iterated 3 times. <br/>
-                 (up to this point the network has 50 layers) <br/>
+         <a style="text-align":"center" >(up to this point the network has 50 layers)</a> <br/>
 
 @Average pooling, followed by a fully connected layer with 1000 nodes, using the softmax activation function. <br/>
 
