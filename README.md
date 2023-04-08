@@ -23,7 +23,7 @@ The 50-layer ResNet architecture includes the following elements, as shown in th
 @ 18 more layers with 1×1,256 cores, and 2 cores 3×3,256 and 1×1,1024, iterated 6 times. <br/>
 @ 9 more layers with 1×1,512 cores, 3×3,512 cores, and 1×1,2048 cores iterated 3 times. <br/>
 
-<p style="text-align:center;">(up to this point the network has 50 layers)</p>
+<p align="center">(up to this point the network has 50 layers)</p>
 @Average pooling, followed by a fully connected layer with 1000 nodes, using the softmax activation function. <br/>
 
 # ResNet-50 Transfer Learning with Keras
