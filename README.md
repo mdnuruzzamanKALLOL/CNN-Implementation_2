@@ -1,4 +1,4 @@
-# CNN-Implementation
+# CNN Implementation
 
 Residual Neural Network (ResNet)
 What is Resnet?
@@ -16,11 +16,15 @@ The 50-layer ResNet architecture includes the following elements, as shown in th
 ![resnet](https://user-images.githubusercontent.com/105699438/230710955-2be90d79-dfa8-47a5-b14d-5cbb1efaab59.png)
 
 @ A 7×7 kernel convolution alongside 64 other kernels with a 2-sized stride. <br/>
-@ A max pooling layer with a 2-sized stride.
-@ 9 more layers—3×3,64 kernel convolution, another with 1×1,64 kernels, and a third with 1×1,256 kernels. These 3 layers are repeated 3 times.
-@ 12 more layers with 1×1,128 kernels, 3×3,128 kernels, and 1×1,512 kernels, iterated 4 times.
-@ 18 more layers with 1×1,256 cores, and 2 cores 3×3,256 and 1×1,1024, iterated 6 times.
-@ 9 more layers with 1×1,512 cores, 3×3,512 cores, and 1×1,2048 cores iterated 3 times.
-                 (up to this point the network has 50 layers)
+@ A max pooling layer with a 2-sized stride. <br/>
+@ 9 more layers—3×3,64 kernel convolution, another with 1×1,64 kernels, and a third with 1×1,256 kernels. These 3 layers are repeated 3 times. <br/>
+@ 12 more layers with 1×1,128 kernels, 3×3,128 kernels, and 1×1,512 kernels, iterated 4 times. <br/>
+@ 18 more layers with 1×1,256 cores, and 2 cores 3×3,256 and 1×1,1024, iterated 6 times. <br/>
+@ 9 more layers with 1×1,512 cores, 3×3,512 cores, and 1×1,2048 cores iterated 3 times. <br/>
+                 (up to this point the network has 50 layers) <br/>
 
-@Average pooling, followed by a fully connected layer with 1000 nodes, using the softmax activation function.
+@Average pooling, followed by a fully connected layer with 1000 nodes, using the softmax activation function. <br/>
+
+# ResNet-50 Transfer Learning with Keras
+
+Transfer learning means taking a pre-trained machine learning model and repurposing it for another related task for faster development. You can load a pretrained version of the neural network trained on more than a million images from the ImageNet database. The pretrained neural network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the neural network has learned rich feature representations for a wide range of images. It helps achieve higher performance even if the model is trained on a smaller dataset.
